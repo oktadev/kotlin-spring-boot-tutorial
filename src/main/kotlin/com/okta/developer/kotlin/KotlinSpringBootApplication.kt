@@ -11,13 +11,14 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class KotlinSpringBootApplication {
 
-	fun main(args: Array<String>) {
-		runApplication<KotlinSpringBootApplication>(*args)
-	}
 
 	@GetMapping("/")
 	fun hello(@AuthenticationPrincipal authenticationToken: OAuth2AuthenticationToken): String {
 		return "Welcome, " + authenticationToken.principal.attributes["name"]
 	}
+}
+
+fun main(args: Array<String>) {
+	runApplication<KotlinSpringBootApplication>(*args)
 }
 
