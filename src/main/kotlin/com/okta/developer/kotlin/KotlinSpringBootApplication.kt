@@ -1,4 +1,4 @@
-package com.okta.developer.kotlin
+package com.okta.developer
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
