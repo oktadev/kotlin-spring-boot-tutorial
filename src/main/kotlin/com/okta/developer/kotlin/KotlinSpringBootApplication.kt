@@ -14,7 +14,7 @@ class KotlinSpringBootApplication {
 
 	@GetMapping("/")
 	fun hello(@AuthenticationPrincipal authenticationToken: OAuth2AuthenticationToken): String {
-		return "Welcome, " + authenticationToken.principal.attributes["name"]
+		return "Welcome ${authenticationToken.principal.attributes["name"]}"
 	}
 }
 
