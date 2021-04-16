@@ -4,11 +4,12 @@ This repository contains the code of a Spring Boot Kotlin application example wi
 
 **Prerequisites:**
 
-- [Java 8](https://adoptopenjdk.net/)
+- [Java 11](https://adoptopenjdk.net/)
 
 ## Getting Started
 
 To install this example, run the following commands:
+
 ```bash
 git clone https://github.com/indiepopart/kotlin-spring-boot.git
 cd kotlin-spring-boot
@@ -45,4 +46,4 @@ Check your email and follow the instructions to activate your Okta account.
 ./mvnw spring-boot:run
 ```
 
-Got to http://localhost:8080 and login with Okta.
+Go to `http://localhost:8080` and login with Okta.
